@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./context.standalone.css">
+    <script src="./jquery-1.12.0.min.js"></script>
+    <script src="./context.js"></script>
+    <script src="demo2.js"></script>
+    <style>
+        .a{
+            width: 100px;
+            background: red;
+            margin: 50px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+
+    </div>
+    <div class="a">
+
+    </div>
+    <div class="a">
+
+    </div>
+    <script>
+        context.init({preventDoubleContext: false});
+        context.attach('.a', test_menu);
+    </script>
+</body>
+</html>
